@@ -1,0 +1,14 @@
+services:
+  app:
+    build: .
+    image: yeltaeva-merey-devops
+    container_name: yeltaeva-merey-compose
+    environment:
+      # values are taken from the .env file; after ":-" is the default
+      STUDENT_NAME: ${STUDENT_NAME:-Merey}
+      STUDENT_SURNAME: ${STUDENT_SURNAME:-Yeltaeva}
+      STUDENT_GROUP: ${STUDENT_GROUP:-IT2-2301}
+      STUDENT_ID: ${STUDENT_ID:-37603}
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
