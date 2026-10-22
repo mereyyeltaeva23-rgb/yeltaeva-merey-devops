@@ -32,5 +32,8 @@ USER appuser
 # 6. Document the port the application listens on
 EXPOSE 5000
 
+# Docker checks every 30s that the app answers on /health
+HEALTHCHECK --interval=30s --timeout=3s CMD wget -qO- http://localhost:5000/health || exit 1
+
 # 7. Command executed when a CONTAINER starts
 CMD ["python", "app/app.py"]
