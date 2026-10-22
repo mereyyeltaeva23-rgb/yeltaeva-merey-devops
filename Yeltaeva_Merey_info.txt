@@ -1,0 +1,5 @@
+Name: Merey
+Surname: Yeltaeva
+Group: IT2-2301
+Student ID: 37603
+Course: DevOps
