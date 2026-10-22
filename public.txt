@@ -1,0 +1,1 @@
+This is a public file. Everyone can read it, only the owner can change it.
