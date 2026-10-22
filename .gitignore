@@ -1,0 +1,8 @@
+# Log files — generated at runtime, can be large
+*.log
+# Local backups — must not be stored in the repository
+backup/
+# Secrets / local environment variables
+.env
+# Python cache
+__pycache__/
